@@ -9,7 +9,7 @@
 
 
 # copy local vimrc to repo folder
-cp ~/.vimrc .
+cp $HOME/.vimrc .
 
 rc=$?
 if [ $rc != 0 ]; then
