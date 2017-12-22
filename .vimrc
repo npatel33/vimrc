@@ -1,4 +1,6 @@
-"
+"Author : Nisarg Patel
+"Date : 12/22/2017
+
 "Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
