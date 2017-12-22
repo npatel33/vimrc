@@ -18,11 +18,11 @@ if [ $rc != 0 ]; then
 fi
 
 # check if vimrc file is changed or not
-val=$(git status .vimrc --porcelain)
-if [ "$val" != "" ]; then
-    git add --all
-    git commit -m "."
-    git push
-else
-    echo "vimrc is not chagned!"
-fi
+# val=$(git status .vimrc --porcelain)
+#if [ "$val" != "" ]; then
+git add --all
+git commit -m "."
+git push
+#else
+#    echo "vimrc is not chagned!"
+#fi
