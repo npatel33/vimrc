@@ -10,12 +10,15 @@
 
 # fetch changes from repo
 git fetch
+val=$(git status | grep by)
 
-rc=$?
-if [ $rc != 0 ]; then
-    echo "Error: Fetching changes failed."
-    exit
+# check if pull is required
+if [ "$val" != "" ]; then
+    echo "Pulling changes"
+    git pull
+   
+    # copy vimrc to home folder
+    cp .vimrc $HOME/
+else
+    echo "Code is up to date."
 fi
-
-# copy vimrc to home folder
-cp .vimrc $HOME/
