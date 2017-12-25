@@ -20,6 +20,9 @@ Plug 'tpope/vim-commentary'
 " Nerdtree file explorer
 Plug 'scrooloose/nerdtree'
 
+" qml highlighting
+Plug 'peterhoeg/vim-qml'
+
 " Initialize plugin system
 call plug#end()
 
